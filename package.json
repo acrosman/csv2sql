@@ -4,6 +4,7 @@
   "description": "A simple tool to generate Database tables from an csv file.",
   "main": "csv2sql.js",
   "scripts": {
+    "lint": "eslint --ignore-path .gitignore csv2sql.js",
     "test": "jest --coverage --passWithNoTests"
   },
   "jest": {
