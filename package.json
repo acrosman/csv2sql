@@ -20,6 +20,7 @@
   "dependencies": {
     "csv-parser": "^3.0.0",
     "knex": "^0.21.21",
+    "strip-bom-stream": "^4.0.0",
     "yargs": "^16.2.0"
   },
   "devDependencies": {
