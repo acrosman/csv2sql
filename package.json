@@ -4,7 +4,7 @@
   "description": "A simple tool to generate Database tables from an csv file.",
   "main": "csv2sql.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage --passWithNoTests"
   },
   "jest": {
     "verbose": true
