@@ -2,7 +2,7 @@
   "name": "csv2sql",
   "version": "0.1.0",
   "description": "A simple tool to generate Database tables from an csv file.",
-  "main": "index.js",
+  "main": "csv2sql.js",
   "scripts": {
     "test": "jest --coverage"
   },
@@ -18,9 +18,12 @@
   "license": "MIT",
   "dependencies": {
     "csv-parse": "^4.16.0",
-    "knex": "^0.21.21"
+    "knex": "^0.21.21",
+    "yargs": "^16.2.0"
   },
   "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-jest": "^24.4.0",
     "jest": "^27.0.6"
   }
 }
