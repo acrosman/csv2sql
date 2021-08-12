@@ -12,5 +12,12 @@
     "KNEX"
   ],
   "author": "Aaron Crosman",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.16.0",
+    "knex": "^0.21.21"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
 }
