@@ -19,11 +19,6 @@ const { argv } = yargs(hideBin(process.argv))
     type: 'string',
     description: 'Name of the table to create',
   })
-  // .option('database', {
-  //   alias: 'd',
-  //   type: 'boolean',
-  //   description: 'When true, create the table in a database instead of displaying the SQL',
-  // })
   .demandOption('file')
   .demandOption('table')
   .help()
