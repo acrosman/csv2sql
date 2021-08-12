@@ -4,7 +4,10 @@
   "description": "A simple tool to generate Database tables from an csv file.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "verbose": true
   },
   "keywords": [
     "CSV",
