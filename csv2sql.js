@@ -31,17 +31,14 @@ fs.createReadStream(argv.file)
     console.log(`File Headers: ${headers}`);
     console.log('Generating SQL');
 
-    const values = [];
-    let sqlStatement = 'CREATE TABLE ? (';
-    values.push(argv.table);
+    let sqlStatement = `CREATE TABLE \`${argv.table}\` (`;
 
     headers.forEach((col) => {
-      sqlStatement += ' ? TEXT,';
-      values.push(col);
+      sqlStatement += ` \`${col}\` TEXT,`;
     });
 
     // Crop off the last , and close the statement.
     sqlStatement = `${sqlStatement.slice(0, -1)});`;
 
-    console.log(SqlString.format(sqlStatement, values));
+    console.log(sqlStatement);
   });
