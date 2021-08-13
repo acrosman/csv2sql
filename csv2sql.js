@@ -4,7 +4,6 @@ const { hideBin } = require('yargs/helpers');
 const csv = require('csv-parser');
 const stripBomStream = require('strip-bom-stream');
 const fs = require('fs');
-const SqlString = require('sqlstring');
 
 // Setup yargs interface commands.
 const { argv } = yargs(hideBin(process.argv))
